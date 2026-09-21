@@ -149,12 +149,6 @@ Generated experiment artifacts are written under `experiments/`. The raw runs ar
 - **Disagreement Score (DS):** measures variation among independently generated policies over supported behavior-bearing leaf fields.
 - **Scenario Alignment Score (SAS):** measures how closely each generated policy matches the expected behavior represented by the corresponding ground-truth policy.
 
-The test below verifies that structural containers are excluded from DS and that all supported behavioral fields have analysis categories:
-
-```bash
-python -m unittest tests.test_disagreement_metric
-```
-
 ## Results
 
 Across the evaluated LLMs and datastore settings, targeted clarification reduces policy disagreement and improves alignment with the expected scenario while preserving YANG syntax validity. SPE achieves 100% syntax validity in the syntactic-correctness experiment through schema-constrained generation and deterministic XML conversion.
