@@ -17,8 +17,8 @@ The framework is evaluated on a synthetic benchmark of 50 security intents under
 
 This project can seen as to succeed these papers:
 
-- Rodriguez et al., [Security Policy Generation for Cloud-Based Security Services using Large Language Model](http://iotlab.skku.edu/publications/domestic-conference/KICS-2025-Winter-LLM-Based-Security-Policy-Generation.pdf), with [source code](https://github.com/jaehoonpauljeong/Data-Modeling-Group-2-Project).
-- Goh et al., [A Hallucination Mitigation Scheme in Security Policy Generation with Large Language Models](http://iotlab.skku.edu/publications/domestic-conference/KICS-2026-Winter-LLM-AntiHallucination.pdf), with [source code](https://github.com/WindJammer6/37.-A-Hallucination-Mitigation-Scheme-in-Security-Policy-Generation-with-Large-Language-Models).
+- [Security Policy Generation for Cloud-Based Security Services using Large Language Model](http://iotlab.skku.edu/publications/domestic-conference/KICS-2025-Winter-LLM-Based-Security-Policy-Generation.pdf), with [source code](https://github.com/jaehoonpauljeong/Data-Modeling-Group-2-Project).
+- [A Hallucination Mitigation Scheme in Security Policy Generation with Large Language Models](http://iotlab.skku.edu/publications/domestic-conference/KICS-2026-Winter-LLM-AntiHallucination.pdf), with [source code](https://github.com/WindJammer6/37.-A-Hallucination-Mitigation-Scheme-in-Security-Policy-Generation-with-Large-Language-Models).
 
 Much thanks to [Jaehoon (Paul) Jeong](https://scholar.google.co.uk/citations?user=_co9LWUAAAAJ&hl=en) for advising this project.
 
