@@ -58,7 +58,7 @@ The SPE policy-generation pipeline contains four stages:
 - `baselines/`: Schema-Guided and Prompt Ensembling implementations used in the syntactic-correctness comparison.
 - `scripts/`: entry points for the syntactic-correctness, main ambiguity-resolution, and hyperparameter experiments.
 - `dataset/`: benchmark intents, held-out scenario cards, expected policies, alignment slots, and the pre-registered datastore.
-- `tests/`: DS tests, SAS implementation, and I2NSF YANG modules used by `yanglint`.
+- `tests/`: SAS implementation and I2NSF YANG modules used by `yanglint`.
 
 ## Benchmark
 
