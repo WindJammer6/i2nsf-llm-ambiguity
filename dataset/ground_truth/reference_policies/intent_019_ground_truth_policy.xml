@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<i2nsf-cfi-policy xmlns="urn:ietf:params:xml:ns:yang:ietf-i2nsf-cons-facing-interface">
+  <name>ground_truth_policy_intent_019</name>
+  <rules>
+    <name>ground_truth_rule_intent_019</name>
+    <action>
+      <primary-action>
+        <action>forwarding</action>
+      </primary-action>
+    </action>
+    <condition>
+      <context>
+        <device-type>
+          <device>ot</device>
+          <device>iot-device</device>
+        </device-type>
+      </context>
+      <firewall>
+        <destination>specialized-gateway</destination>
+        <source>iot-devices</source>
+      </firewall>
+    </condition>
+  </rules>
+</i2nsf-cfi-policy>

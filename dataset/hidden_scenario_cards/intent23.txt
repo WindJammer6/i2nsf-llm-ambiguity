@@ -1,0 +1,23 @@
+Original User Intent:
+Send an alert to the monitoring system for any detected port scans (but allow traffic).
+
+Hidden User Scenario:
+The user is a security monitoring administrator who wants the system to detect possible port scanning activity and send an alert to the monitoring system. The traffic should not be blocked by this rule; it should still be allowed while the alert is generated. The user understands the monitoring goal but does not know exact detection signatures, XML, YANG, or monitoring object names.
+
+Ground Truth:
+- Event: Not applicable.
+- Firewall Source: Not applicable.
+- Firewall Destination: Not applicable.
+- Firewall Transport / Port / ICMP: Not applicable.
+- DDoS: Not applicable.
+- Payload / Anti-virus: Not applicable.
+- URL Category: Not applicable.
+- Voice: Not applicable.
+- Time Context: Not applicable.
+- Application Context: Not applicable.
+- Device-Type Context: Not applicable.
+- Users Context: Not applicable.
+- Geographic Location Context: Not applicable.
+- Threat Feed: Not applicable.
+- Primary Action: pass
+- Secondary Logging Action: rule-log

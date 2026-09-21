@@ -1,0 +1,23 @@
+Original User Intent:
+Reject any unauthorized login attempts and send an error notification back to the source.
+
+Hidden User Scenario:
+When such an attempt is detected, the source should receive an error or rejection notification. The user knows the intended behavior but does not know XML, YANG, endpoint group names, or exact technical fields.
+
+Ground Truth:
+- Event: system-event: access-violation
+- Firewall Source: unauthorized-employees
+- Firewall Destination: specialized-gateway
+- Firewall Transport / Port / ICMP: Not applicable.
+- DDoS: Not applicable.
+- Payload / Anti-virus: Not applicable.
+- URL Category: Not applicable.
+- Voice: Not applicable.
+- Time Context: Not applicable.
+- Application Context: Not applicable.
+- Device-Type Context: Not applicable.
+- Users Context: Not applicable.
+- Geographic Location Context: Not applicable.
+- Threat Feed: Not applicable.
+- Primary Action: reject
+- Secondary Logging Action: rule-log

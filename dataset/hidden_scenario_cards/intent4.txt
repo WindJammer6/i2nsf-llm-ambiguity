@@ -1,0 +1,23 @@
+Original User Intent:
+Block my son's computers from malicious websites.
+
+Hidden User Scenario:
+The user is a parent who wants to protect their son's computers from accessing websites known to be malicious or unsafe. The restriction should apply only to the son's computers, not to all devices in the home. The user does not know the exact website list, URL category name, threat-feed name, protocols, or ports. They simply want known malicious websites to be blocked.
+
+Ground Truth:
+- Event: Not applicable.
+- Firewall Source: son-computers
+- Firewall Destination: Not applicable.
+- Firewall Transport / Port / ICMP: Not applicable.
+- DDoS: Not applicable.
+- Payload / Anti-virus: Not applicable.
+- URL Category: malicious-websites
+- Voice: Not applicable.
+- Time Context: Not applicable.
+- Application Context: Not applicable.
+- Device-Type Context: computer
+- Users Context: Not applicable.
+- Geographic Location Context: Not applicable.
+- Threat Feed: Not applicable.
+- Primary Action: drop
+- Secondary Logging Action: Not applicable.

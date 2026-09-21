@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<i2nsf-cfi-policy xmlns="urn:ietf:params:xml:ns:yang:ietf-i2nsf-cons-facing-interface">
+  <name>ground_truth_policy_intent_028</name>
+  <rules>
+    <name>ground_truth_rule_intent_028</name>
+    <action>
+      <primary-action>
+        <action>rate-limit</action>
+        <limit>10000000</limit>
+      </primary-action>
+    </action>
+    <condition>
+      <context>
+        <time>
+          <frequency>weekly</frequency>
+          <period>
+            <day>monday</day>
+            <day>tuesday</day>
+            <day>wednesday</day>
+            <day>thursday</day>
+            <day>friday</day>
+            <end-time>18:00:00Z</end-time>
+            <start-time>09:00:00Z</start-time>
+          </period>
+        </time>
+      </context>
+      <firewall>
+        <source>it-administrators</source>
+      </firewall>
+    </condition>
+  </rules>
+</i2nsf-cfi-policy>

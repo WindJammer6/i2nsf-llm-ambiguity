@@ -1,0 +1,23 @@
+Original User Intent:
+Allow HR portal access only from Singapore.
+
+Hidden User Scenario:
+The user is an HR systems administrator who wants the company HR portal to be reachable only from Singapore. Access attempts from Singapore should be allowed, while access from other locations should not be permitted. The user understands the real-world place and the HR portal, but does not know XML, YANG, exact location policy fields, or datastore object definitions.
+
+Ground Truth:
+- Event: Not applicable.
+- Firewall Source: Not applicable.
+- Firewall Destination: hr-portal
+- Firewall Transport / Port / ICMP: Not applicable.
+- DDoS: Not applicable.
+- Payload / Anti-virus: Not applicable.
+- URL Category: Not applicable.
+- Voice: Not applicable.
+- Time Context: Not applicable.
+- Application Context: Not applicable.
+- Device-Type Context: Not applicable.
+- Users Context: employees
+- Geographic Location Context: SG|SG-01|Singapore
+- Threat Feed: Not applicable.
+- Primary Action: pass
+- Secondary Logging Action: Not applicable.

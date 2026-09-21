@@ -1,0 +1,266 @@
+{
+    "intent_index":  25,
+    "intent":  "Limit guest network bandwidth to 1000 packets per second.",
+    "slot_count":  43,
+    "slots":  {
+                  "/i2nsf-cfi-policy/rules/event/system-event":  {
+                                                                     "applicable":  false,
+                                                                     "expected":  null,
+                                                                     "source_group":  "Event",
+                                                                     "note":  "Field is prohibited by the ground-truth scenario."
+                                                                 },
+                  "/i2nsf-cfi-policy/rules/event/system-alarm":  {
+                                                                     "applicable":  false,
+                                                                     "expected":  null,
+                                                                     "source_group":  "Event",
+                                                                     "note":  "Field is prohibited by the ground-truth scenario."
+                                                                 },
+                  "/i2nsf-cfi-policy/rules/condition/firewall/source":  {
+                                                                            "applicable":  true,
+                                                                            "expected":  "guest-users",
+                                                                            "source_group":  "Firewall Source",
+                                                                            "note":  "Derived from Firewall Source."
+                                                                        },
+                  "/i2nsf-cfi-policy/rules/condition/firewall/destination":  {
+                                                                                 "applicable":  false,
+                                                                                 "expected":  null,
+                                                                                 "source_group":  "Firewall Destination",
+                                                                                 "note":  "Field is prohibited by the ground-truth scenario."
+                                                                             },
+                  "/i2nsf-cfi-policy/rules/condition/firewall/transport-layer-protocol":  {
+                                                                                              "applicable":  false,
+                                                                                              "expected":  null,
+                                                                                              "source_group":  "Firewall Transport / Port / ICMP",
+                                                                                              "note":  "Field is prohibited by the ground-truth scenario."
+                                                                                          },
+                  "/i2nsf-cfi-policy/rules/condition/firewall/range-port-number/start":  {
+                                                                                             "applicable":  false,
+                                                                                             "expected":  null,
+                                                                                             "source_group":  "Firewall Transport / Port / ICMP",
+                                                                                             "note":  "Field is prohibited by the ground-truth scenario."
+                                                                                         },
+                  "/i2nsf-cfi-policy/rules/condition/firewall/range-port-number/end":  {
+                                                                                           "applicable":  false,
+                                                                                           "expected":  null,
+                                                                                           "source_group":  "Firewall Transport / Port / ICMP",
+                                                                                           "note":  "Field is prohibited by the ground-truth scenario."
+                                                                                       },
+                  "/i2nsf-cfi-policy/rules/condition/firewall/icmp/message":  {
+                                                                                  "applicable":  false,
+                                                                                  "expected":  null,
+                                                                                  "source_group":  "Firewall Transport / Port / ICMP",
+                                                                                  "note":  "Field is prohibited by the ground-truth scenario."
+                                                                              },
+                  "/i2nsf-cfi-policy/rules/condition/ddos/rate-limit/packet-rate-threshold":  {
+                                                                                                  "applicable":  true,
+                                                                                                  "expected":  "1000",
+                                                                                                  "source_group":  "DDoS",
+                                                                                                  "note":  "Derived from hidden scenario card ground truth."
+                                                                                              },
+                  "/i2nsf-cfi-policy/rules/condition/ddos/rate-limit/byte-rate-threshold":  {
+                                                                                                "applicable":  false,
+                                                                                                "expected":  null,
+                                                                                                "source_group":  "DDoS",
+                                                                                                "note":  "Field is prohibited by the ground-truth scenario."
+                                                                                            },
+                  "/i2nsf-cfi-policy/rules/condition/ddos/rate-limit/flow-rate-threshold":  {
+                                                                                                "applicable":  false,
+                                                                                                "expected":  null,
+                                                                                                "source_group":  "DDoS",
+                                                                                                "note":  "Field is prohibited by the ground-truth scenario."
+                                                                                            },
+                  "/i2nsf-cfi-policy/rules/condition/anti-virus/profile":  {
+                                                                               "applicable":  false,
+                                                                               "expected":  null,
+                                                                               "source_group":  "Payload / Anti-virus",
+                                                                               "note":  "Field is prohibited by the ground-truth scenario."
+                                                                           },
+                  "/i2nsf-cfi-policy/rules/condition/anti-virus/exception-files":  {
+                                                                                       "applicable":  false,
+                                                                                       "expected":  null,
+                                                                                       "source_group":  "Payload / Anti-virus",
+                                                                                       "note":  "Field is prohibited by the ground-truth scenario."
+                                                                                   },
+                  "/i2nsf-cfi-policy/rules/condition/payload/content":  {
+                                                                            "applicable":  false,
+                                                                            "expected":  null,
+                                                                            "source_group":  "Payload / Anti-virus",
+                                                                            "note":  "Field is prohibited by the ground-truth scenario."
+                                                                        },
+                  "/i2nsf-cfi-policy/rules/condition/url-category/url-name":  {
+                                                                                  "applicable":  false,
+                                                                                  "expected":  null,
+                                                                                  "source_group":  "URL Category",
+                                                                                  "note":  "Field is prohibited by the ground-truth scenario."
+                                                                              },
+                  "/i2nsf-cfi-policy/rules/condition/voice/source-id":  {
+                                                                            "applicable":  false,
+                                                                            "expected":  null,
+                                                                            "source_group":  "Voice",
+                                                                            "note":  "Field is prohibited by the ground-truth scenario."
+                                                                        },
+                  "/i2nsf-cfi-policy/rules/condition/voice/destination-id":  {
+                                                                                 "applicable":  false,
+                                                                                 "expected":  null,
+                                                                                 "source_group":  "Voice",
+                                                                                 "note":  "Field is prohibited by the ground-truth scenario."
+                                                                             },
+                  "/i2nsf-cfi-policy/rules/condition/voice/user-agent":  {
+                                                                             "applicable":  false,
+                                                                             "expected":  null,
+                                                                             "source_group":  "Voice",
+                                                                             "note":  "Field is prohibited by the ground-truth scenario."
+                                                                         },
+                  "/i2nsf-cfi-policy/rules/condition/context/time/start-date-time":  {
+                                                                                         "applicable":  false,
+                                                                                         "expected":  null,
+                                                                                         "source_group":  "Time Context",
+                                                                                         "note":  "Field is prohibited by the ground-truth scenario."
+                                                                                     },
+                  "/i2nsf-cfi-policy/rules/condition/context/time/end-date-time":  {
+                                                                                       "applicable":  false,
+                                                                                       "expected":  null,
+                                                                                       "source_group":  "Time Context",
+                                                                                       "note":  "Field is prohibited by the ground-truth scenario."
+                                                                                   },
+                  "/i2nsf-cfi-policy/rules/condition/context/time/period/start-time":  {
+                                                                                           "applicable":  false,
+                                                                                           "expected":  null,
+                                                                                           "source_group":  "Time Context",
+                                                                                           "note":  "Field is prohibited by the ground-truth scenario."
+                                                                                       },
+                  "/i2nsf-cfi-policy/rules/condition/context/time/period/end-time":  {
+                                                                                         "applicable":  false,
+                                                                                         "expected":  null,
+                                                                                         "source_group":  "Time Context",
+                                                                                         "note":  "Field is prohibited by the ground-truth scenario."
+                                                                                     },
+                  "/i2nsf-cfi-policy/rules/condition/context/time/period/day":  {
+                                                                                    "applicable":  false,
+                                                                                    "expected":  null,
+                                                                                    "source_group":  "Time Context",
+                                                                                    "note":  "Field is prohibited by the ground-truth scenario."
+                                                                                },
+                  "/i2nsf-cfi-policy/rules/condition/context/time/period/date":  {
+                                                                                     "applicable":  false,
+                                                                                     "expected":  null,
+                                                                                     "source_group":  "Time Context",
+                                                                                     "note":  "Field is prohibited by the ground-truth scenario."
+                                                                                 },
+                  "/i2nsf-cfi-policy/rules/condition/context/time/period/month/start":  {
+                                                                                            "applicable":  false,
+                                                                                            "expected":  null,
+                                                                                            "source_group":  "Time Context",
+                                                                                            "note":  "Field is prohibited by the ground-truth scenario."
+                                                                                        },
+                  "/i2nsf-cfi-policy/rules/condition/context/time/period/month/end":  {
+                                                                                          "applicable":  false,
+                                                                                          "expected":  null,
+                                                                                          "source_group":  "Time Context",
+                                                                                          "note":  "Field is prohibited by the ground-truth scenario."
+                                                                                      },
+                  "/i2nsf-cfi-policy/rules/condition/context/time/frequency":  {
+                                                                                   "applicable":  false,
+                                                                                   "expected":  null,
+                                                                                   "source_group":  "Time Context",
+                                                                                   "note":  "Field is prohibited by the ground-truth scenario."
+                                                                               },
+                  "/i2nsf-cfi-policy/rules/condition/context/application/protocol":  {
+                                                                                         "applicable":  false,
+                                                                                         "expected":  null,
+                                                                                         "source_group":  "Application Context",
+                                                                                         "note":  "Field is prohibited by the ground-truth scenario."
+                                                                                     },
+                  "/i2nsf-cfi-policy/rules/condition/context/device-type/device":  {
+                                                                                       "applicable":  false,
+                                                                                       "expected":  null,
+                                                                                       "source_group":  "Device-Type Context",
+                                                                                       "note":  "Field is prohibited by the ground-truth scenario."
+                                                                                   },
+                  "/i2nsf-cfi-policy/rules/condition/context/users/user/id":  {
+                                                                                  "applicable":  false,
+                                                                                  "expected":  null,
+                                                                                  "source_group":  "Users Context",
+                                                                                  "note":  "Field is prohibited by the ground-truth scenario."
+                                                                              },
+                  "/i2nsf-cfi-policy/rules/condition/context/users/user/name":  {
+                                                                                    "applicable":  false,
+                                                                                    "expected":  null,
+                                                                                    "source_group":  "Users Context",
+                                                                                    "note":  "Field is prohibited by the ground-truth scenario."
+                                                                                },
+                  "/i2nsf-cfi-policy/rules/condition/context/users/group/id":  {
+                                                                                   "applicable":  false,
+                                                                                   "expected":  null,
+                                                                                   "source_group":  "Users Context",
+                                                                                   "note":  "Field is prohibited by the ground-truth scenario."
+                                                                               },
+                  "/i2nsf-cfi-policy/rules/condition/context/users/group/name":  {
+                                                                                     "applicable":  false,
+                                                                                     "expected":  null,
+                                                                                     "source_group":  "Users Context",
+                                                                                     "note":  "Field is prohibited by the ground-truth scenario."
+                                                                                 },
+                  "/i2nsf-cfi-policy/rules/condition/context/geographic-location/source/country":  {
+                                                                                                       "applicable":  false,
+                                                                                                       "expected":  null,
+                                                                                                       "source_group":  "Geographic Location Context",
+                                                                                                       "note":  "Field is prohibited by the ground-truth scenario."
+                                                                                                   },
+                  "/i2nsf-cfi-policy/rules/condition/context/geographic-location/source/region":  {
+                                                                                                      "applicable":  false,
+                                                                                                      "expected":  null,
+                                                                                                      "source_group":  "Geographic Location Context",
+                                                                                                      "note":  "Field is prohibited by the ground-truth scenario."
+                                                                                                  },
+                  "/i2nsf-cfi-policy/rules/condition/context/geographic-location/source/city":  {
+                                                                                                    "applicable":  false,
+                                                                                                    "expected":  null,
+                                                                                                    "source_group":  "Geographic Location Context",
+                                                                                                    "note":  "Field is prohibited by the ground-truth scenario."
+                                                                                                },
+                  "/i2nsf-cfi-policy/rules/condition/context/geographic-location/destination/country":  {
+                                                                                                            "applicable":  false,
+                                                                                                            "expected":  null,
+                                                                                                            "source_group":  "Geographic Location Context",
+                                                                                                            "note":  "Field is prohibited by the ground-truth scenario."
+                                                                                                        },
+                  "/i2nsf-cfi-policy/rules/condition/context/geographic-location/destination/region":  {
+                                                                                                           "applicable":  false,
+                                                                                                           "expected":  null,
+                                                                                                           "source_group":  "Geographic Location Context",
+                                                                                                           "note":  "Field is prohibited by the ground-truth scenario."
+                                                                                                       },
+                  "/i2nsf-cfi-policy/rules/condition/context/geographic-location/destination/city":  {
+                                                                                                         "applicable":  false,
+                                                                                                         "expected":  null,
+                                                                                                         "source_group":  "Geographic Location Context",
+                                                                                                         "note":  "Field is prohibited by the ground-truth scenario."
+                                                                                                     },
+                  "/i2nsf-cfi-policy/rules/condition/threat-feed/name":  {
+                                                                             "applicable":  false,
+                                                                             "expected":  null,
+                                                                             "source_group":  "Threat Feed",
+                                                                             "note":  "Field is prohibited by the ground-truth scenario."
+                                                                         },
+                  "/i2nsf-cfi-policy/rules/action/primary-action/action":  {
+                                                                               "applicable":  true,
+                                                                               "expected":  "rate-limit",
+                                                                               "source_group":  "Primary Action",
+                                                                               "note":  "Derived from Primary Action."
+                                                                           },
+                  "/i2nsf-cfi-policy/rules/action/primary-action/limit":  {
+                                                                              "applicable":  false,
+                                                                              "expected":  null,
+                                                                              "source_group":  "Primary Action",
+                                                                              "note":  "Field is prohibited by the ground-truth scenario."
+                                                                          },
+                  "/i2nsf-cfi-policy/rules/action/secondary-action/log-action":  {
+                                                                                     "applicable":  false,
+                                                                                     "expected":  null,
+                                                                                     "source_group":  "Secondary Logging Action",
+                                                                                     "note":  "Field is prohibited by the ground-truth scenario."
+                                                                                 }
+              },
+    "applicable_false_semantics":  "prohibited"
+}

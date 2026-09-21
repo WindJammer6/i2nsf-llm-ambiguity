@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<i2nsf-cfi-policy xmlns="urn:ietf:params:xml:ns:yang:ietf-i2nsf-cons-facing-interface">
+  <name>ground_truth_policy_intent_047</name>
+  <rules>
+    <name>ground_truth_rule_intent_047</name>
+    <action>
+      <primary-action>
+        <action>drop</action>
+      </primary-action>
+      <secondary-action>
+        <log-action>rule-log</log-action>
+      </secondary-action>
+    </action>
+    <condition>
+      <threat-feed>
+        <name>zeus-ioc</name>
+      </threat-feed>
+    </condition>
+    <event>
+      <system-event>access-violation</system-event>
+    </event>
+  </rules>
+</i2nsf-cfi-policy>

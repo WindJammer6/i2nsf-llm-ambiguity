@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<i2nsf-cfi-policy xmlns="urn:ietf:params:xml:ns:yang:ietf-i2nsf-cons-facing-interface">
+  <name>ground_truth_policy_intent_044</name>
+  <rules>
+    <name>ground_truth_rule_intent_044</name>
+    <action>
+      <primary-action>
+        <action>reject</action>
+      </primary-action>
+    </action>
+    <condition>
+      <firewall>
+        <source>external-network</source>
+      </firewall>
+    </condition>
+    <event>
+      <system-alarm>interface-alarm</system-alarm>
+    </event>
+  </rules>
+</i2nsf-cfi-policy>

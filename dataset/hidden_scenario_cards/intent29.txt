@@ -1,0 +1,23 @@
+Original User Intent:
+Block traffic to the admin port and log the attempt for auditing.
+
+Hidden User Scenario:
+The user is a system administrator who wants to prevent access to a sensitive administrative port. The rule should block traffic trying to reach the admin port and record each attempt for auditing. The user knows this is about the admin port but may not know the exact port number unless asked. They do not know XML, YANG, or datastore object names.
+
+Ground Truth:
+- Event: Not applicable.
+- Firewall Source: it-administrators
+- Firewall Destination: Not applicable.
+- Firewall Transport / Port / ICMP: Not applicable.
+- DDoS: Not applicable.
+- Payload / Anti-virus: Not applicable.
+- URL Category: Not applicable.
+- Voice: Not applicable.
+- Time Context: Not applicable.
+- Application Context: Not applicable.
+- Device-Type Context: Not applicable.
+- Users Context: Not applicable.
+- Geographic Location Context: Not applicable.
+- Threat Feed: Not applicable.
+- Primary Action: drop
+- Secondary Logging Action: rule-log

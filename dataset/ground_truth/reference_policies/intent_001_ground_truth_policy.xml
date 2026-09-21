@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<i2nsf-cfi-policy xmlns="urn:ietf:params:xml:ns:yang:ietf-i2nsf-cons-facing-interface">
+  <name>ground_truth_policy_intent_001</name>
+  <rules>
+    <name>ground_truth_rule_intent_001</name>
+    <action>
+      <primary-action>
+        <action>drop</action>
+      </primary-action>
+    </action>
+    <condition>
+      <context>
+        <time>
+          <end-date-time>2021-12-31T18:00:00.00Z</end-date-time>
+          <frequency>weekly</frequency>
+          <period>
+            <day>monday</day>
+            <day>tuesday</day>
+            <day>wednesday</day>
+            <day>thursday</day>
+            <day>friday</day>
+            <end-time>18:00:00Z</end-time>
+            <start-time>09:00:00Z</start-time>
+          </period>
+          <start-date-time>2021-03-11T09:00:00.00Z</start-date-time>
+        </time>
+      </context>
+      <firewall>
+        <source>employees</source>
+      </firewall>
+      <url-category>
+        <url-name>sns-websites</url-name>
+      </url-category>
+    </condition>
+  </rules>
+</i2nsf-cfi-policy>

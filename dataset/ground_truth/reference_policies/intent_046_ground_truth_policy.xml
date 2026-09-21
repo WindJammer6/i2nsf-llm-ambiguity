@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<i2nsf-cfi-policy xmlns="urn:ietf:params:xml:ns:yang:ietf-i2nsf-cons-facing-interface">
+  <name>ground_truth_policy_intent_046</name>
+  <rules>
+    <name>ground_truth_rule_intent_046</name>
+    <action>
+      <primary-action>
+        <action>drop</action>
+      </primary-action>
+    </action>
+    <event>
+      <system-alarm>memory-alarm</system-alarm>
+      <system-event>configuration-change</system-event>
+    </event>
+  </rules>
+</i2nsf-cfi-policy>

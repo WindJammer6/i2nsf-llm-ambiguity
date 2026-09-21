@@ -1,0 +1,23 @@
+Original User Intent:
+Block SNS access during office hours with a weekly frequency (9am-5pm; Monday-Friday).
+
+Hidden User Scenario:
+The user is a company administrator who wants to block employees from accessing social networking services during regular office hours. The specific SNS sites to block are Facebook, Instagram and Twitter. The policy should apply every week from Monday to Friday, 09:00 to 17:00. It should target regular employee devices on the corporate network. The user knows the desired schedule but does not know technical network details such as protocols, ports, endpoint groups, XML, or YANG.
+
+Ground Truth:
+- Event: Not applicable.
+- Firewall Source: employee-devices
+- Firewall Destination: Not applicable.
+- Firewall Transport / Port / ICMP: Not applicable.
+- DDoS: Not applicable.
+- Payload / Anti-virus: Not applicable.
+- URL Category: sns-websites
+- Voice: Not applicable.
+- Time Context: Monday to Friday, 09:00 to 17:00.
+- Application Context: Not applicable.
+- Device-Type Context: Not applicable.
+- Users Context: Not applicable.
+- Geographic Location Context: Not applicable.
+- Threat Feed: Not applicable.
+- Primary Action: drop
+- Secondary Logging Action: Not applicable.

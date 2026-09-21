@@ -1,0 +1,23 @@
+﻿Original User Intent:
+Block Malicious VoIP/VoCN Packets Coming to a Company.
+
+Hidden User Scenario:
+The user is a company operations manager who has been told that suspicious voice communication packets are reaching company employees. The traffic should be blocked when the voice source identity is malicious-id and the firewall destination is employees. The user does not know XML, YANG, or datastore object names.
+
+Ground Truth:
+- Event: Not applicable.
+- Firewall Source: Not applicable.
+- Firewall Destination: employees
+- Firewall Transport / Port / ICMP: Not applicable.
+- DDoS: Not applicable.
+- Payload / Anti-virus: Not applicable.
+- URL Category: Not applicable.
+- Voice: source-id: malicious-id
+- Time Context: Not applicable.
+- Application Context: Not applicable.
+- Device-Type Context: Not applicable.
+- Users Context: Not applicable.
+- Geographic Location Context: Not applicable.
+- Threat Feed: Not applicable.
+- Primary Action: drop
+- Secondary Logging Action: Not applicable.

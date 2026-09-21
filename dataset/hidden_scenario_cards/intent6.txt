@@ -1,0 +1,23 @@
+Original User Intent:
+Block access to Youtube, X and Instagram during school hours to all PCs within 128.0.0.0-128.0.0.255 IPv4 ranges.
+
+Hidden User Scenario:
+The user is a school administrator who wants to stop students from using YouTube, X, and Instagram during school hours. The rule should apply to all PCs within the IPv4 range 128.0.0.0 to 128.0.0.255. School hours are the normal school day, Monday to Friday, 08:00 to 15:00. The user knows the affected IP range and websites, but does not know firewall syntax, protocols, ports, XML, YANG, or datastore object names.
+
+Ground Truth:
+- Event: Not applicable.
+- Firewall Source: student-pcs
+- Firewall Destination: Not applicable.
+- Firewall Transport / Port / ICMP: Not applicable.
+- DDoS: Not applicable.
+- Payload / Anti-virus: Not applicable.
+- URL Category: youtube-x-instagram
+- Voice: Not applicable.
+- Time Context: Monday to Friday, 08:00 to 15:00.
+- Application Context: Not applicable.
+- Device-Type Context: computer.
+- Users Context: students
+- Geographic Location Context: Not applicable.
+- Threat Feed: Not applicable.
+- Primary Action: drop
+- Secondary Logging Action: Not applicable.

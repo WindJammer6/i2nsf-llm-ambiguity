@@ -1,0 +1,23 @@
+Original User Intent:
+If a configuration change is made while memory usage on the firewall is critically high, drop any non-management traffic until stability is restored.
+
+Hidden User Scenario:
+The user is a firewall administrator who wants to protect the firewall during an unstable condition. If a configuration change happens while firewall memory usage is critically high, non-management traffic should be dropped until the firewall becomes stable again. Management traffic should still be allowed so administrators can recover the system. The user does not know XML, YANG, exact memory alarm names, or datastore object names.
+
+Ground Truth:
+- Event: system-event: configuration-change, system-alarm: memory-alarm
+- Firewall Source: Not applicable.
+- Firewall Destination: Not applicable.
+- Firewall Transport / Port / ICMP: Not applicable.
+- DDoS: Not applicable.
+- Payload / Anti-virus: Not applicable.
+- URL Category: Not applicable.
+- Voice: Not applicable.
+- Time Context: Not applicable.
+- Application Context: Not applicable.
+- Device-Type Context: Not applicable.
+- Users Context: Management staff should be allowed for recovery.
+- Geographic Location Context: Not applicable.
+- Threat Feed: Not applicable.
+- Primary Action: drop
+- Secondary Logging Action: Not applicable.

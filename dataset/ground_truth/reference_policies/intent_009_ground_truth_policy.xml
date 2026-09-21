@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<i2nsf-cfi-policy xmlns="urn:ietf:params:xml:ns:yang:ietf-i2nsf-cons-facing-interface">
+  <name>ground_truth_policy_intent_009</name>
+  <rules>
+    <name>ground_truth_rule_intent_009</name>
+    <action>
+      <primary-action>
+        <action>pass</action>
+      </primary-action>
+    </action>
+    <condition>
+      <firewall>
+        <source>internal-hr-system</source>
+      </firewall>
+    </condition>
+    <event>
+      <system-event>configuration-change</system-event>
+    </event>
+  </rules>
+</i2nsf-cfi-policy>

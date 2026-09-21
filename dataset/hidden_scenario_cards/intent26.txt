@@ -1,0 +1,23 @@
+Original User Intent:
+Cap new connection attempts to 20 flows per second to protect the server from abuse.
+
+Hidden User Scenario:
+The user is responsible for protecting a server from excessive new connection attempts. The rule should limit new connection attempts to 20 flows per second. The goal is to reduce abuse or overload attempts while still allowing reasonable traffic. The user knows the desired flow limit but does not know exact firewall syntax, XML, YANG, or datastore object names.
+
+Ground Truth:
+- Event: Not applicable.
+- Firewall Source: Not applicable.
+- Firewall Destination: central-server
+- Firewall Transport / Port / ICMP: Not applicable.
+- DDoS: Limit new connection attempts to 20 flows per second.
+- Payload / Anti-virus: Not applicable.
+- URL Category: Not applicable.
+- Voice: Not applicable.
+- Time Context: Not applicable.
+- Application Context: Not applicable.
+- Device-Type Context: Not applicable.
+- Users Context: Not applicable.
+- Geographic Location Context: Not applicable.
+- Threat Feed: Not applicable.
+- Primary Action: rate-limit
+- Secondary Logging Action: Not applicable.

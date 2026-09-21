@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<i2nsf-cfi-policy xmlns="urn:ietf:params:xml:ns:yang:ietf-i2nsf-cons-facing-interface">
+  <name>ground_truth_policy_intent_034</name>
+  <rules>
+    <name>ground_truth_rule_intent_034</name>
+    <action>
+      <primary-action>
+        <action>pass</action>
+      </primary-action>
+      <secondary-action>
+        <log-action>rule-log</log-action>
+      </secondary-action>
+    </action>
+    <condition>
+      <context>
+        <device-type>
+          <device>computer</device>
+        </device-type>
+      </context>
+      <firewall>
+        <source>employee-devices</source>
+      </firewall>
+    </condition>
+  </rules>
+</i2nsf-cfi-policy>

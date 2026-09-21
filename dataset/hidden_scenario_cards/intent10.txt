@@ -1,0 +1,23 @@
+Original User Intent:
+Permit employees to browse the web freely from the corporate network.
+
+Hidden User Scenario:
+The user is a company administrator who wants regular employees to be allowed to browse websites from the corporate network. The rule should apply to employee devices connected to the corporate network. The user means normal web browsing and does not intend to include unrelated services. They do not know specific technical protocol details, ports, XML, YANG, or endpoint group names. There is no special time restriction.
+
+Ground Truth:
+- Event: Not applicable.
+- Firewall Source: employee-devices
+- Firewall Destination: Not applicable.
+- Firewall Transport / Port / ICMP: Not applicable.
+- DDoS: Not applicable.
+- Payload / Anti-virus: Not applicable.
+- URL Category: Not applicable.
+- Voice: Not applicable.
+- Time Context: Not applicable.
+- Application Context: Not applicable.
+- Device-Type Context: Not applicable.
+- Users Context: Not applicable.
+- Geographic Location Context: Not applicable.
+- Threat Feed: Not applicable.
+- Primary Action: pass
+- Secondary Logging Action: Not applicable.

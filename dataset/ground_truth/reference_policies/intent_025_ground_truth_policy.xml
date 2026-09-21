@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<i2nsf-cfi-policy xmlns="urn:ietf:params:xml:ns:yang:ietf-i2nsf-cons-facing-interface">
+  <name>ground_truth_policy_intent_025</name>
+  <rules>
+    <name>ground_truth_rule_intent_025</name>
+    <action>
+      <primary-action>
+        <action>rate-limit</action>
+      </primary-action>
+    </action>
+    <condition>
+      <ddos>
+        <rate-limit>
+          <packet-rate-threshold>1000</packet-rate-threshold>
+        </rate-limit>
+      </ddos>
+      <firewall>
+        <source>guest-users</source>
+      </firewall>
+    </condition>
+    <event>
+      <system-event>configuration-change</system-event>
+    </event>
+  </rules>
+</i2nsf-cfi-policy>

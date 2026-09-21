@@ -1,0 +1,23 @@
+Original User Intent:
+If memory usage on the database server exceeds 80%, drop nonessential backup traffic.
+
+Hidden User Scenario:
+The user is a database administrator who wants to protect the database server when it is under memory pressure. If memory usage on the database server goes above 80%, nonessential backup traffic should be dropped so that important database operations can continue. The rule should not block critical database traffic. The user knows the 80% memory threshold but does not know XML, YANG, or datastore object names.
+
+Ground Truth:
+- Event: system-alarm: memory-alarm
+- Firewall Source: database-server
+- Firewall Destination: Not applicable.
+- Firewall Transport / Port / ICMP: Not applicable.
+- DDoS: Not applicable.
+- Payload / Anti-virus: Not applicable.
+- URL Category: Not applicable.
+- Voice: Not applicable.
+- Time Context: Not applicable.
+- Application Context: Not applicable.
+- Device-Type Context: Not applicable.
+- Users Context: Not applicable.
+- Geographic Location Context: Not applicable.
+- Threat Feed: Not applicable.
+- Primary Action: drop
+- Secondary Logging Action: Not applicable.

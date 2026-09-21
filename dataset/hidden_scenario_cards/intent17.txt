@@ -1,0 +1,24 @@
+﻿Original User Intent:
+Reject VPN login attempts from San Francisco, California during office hours.
+
+Hidden User Scenario:
+Office hours mean Monday to Friday, 09:00 to 18:00. The user wants VPN login attempts from San Francisco, California to be actively rejected during those office hours rather than silently dropped. The user does not know XML, YANG, exact schema fields, or datastore object names.
+
+Ground Truth:
+- Event: Not applicable.
+- Firewall Source: US|US-CA|San Francisco
+- Firewall Destination: Not applicable.
+- Firewall Transport / Port / ICMP: Not applicable.
+- DDoS: Not applicable.
+- Payload / Anti-virus: Not applicable.
+- URL Category: Not applicable.
+- Voice: Not applicable.
+- Time Context: During office hours, Monday to Friday, 09:00 to 18:00.
+- Application Context: Not applicable.
+- Device-Type Context: Not applicable.
+- Users Context: employees
+- Geographic Location Context: US|US-CA|San Francisco
+- Threat Feed: Not applicable.
+- Primary Action: reject
+- Secondary Logging Action: Not applicable.
+

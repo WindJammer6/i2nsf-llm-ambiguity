@@ -1,0 +1,24 @@
+Original User Intent:
+Throttle streaming media traffic to 100 MB/s to prevent network congestion.
+
+Hidden User Scenario:
+The user is a network administrator who wants to prevent streaming media traffic from consuming too much bandwidth. The rule should apply to streaming media services and limit them to 100 MB/s. The goal is congestion control, not full blocking. The user knows the desired bandwidth limit but does not know exact protocol names, ports, XML, YANG, or datastore object names.
+
+Ground Truth:
+- Event: Not applicable.
+- Firewall Source: employees
+- Firewall Destination: Not applicable.
+- Firewall Transport / Port / ICMP: Not applicable.
+- DDoS: Not applicable.
+- Payload / Anti-virus: Not applicable.
+- URL Category: video-streaming-websites
+- Voice: Not applicable.
+- Time Context: Not applicable.
+- Application Context: Not applicable.
+- Device-Type Context: Not applicable.
+- Users Context: Not applicable.
+- Geographic Location Context: Not applicable.
+- Threat Feed: Not applicable.
+- Primary Action: rate-limit
+- Primary Action Limit: 100000000 bytes per second
+- Secondary Logging Action: Not applicable.

@@ -1,0 +1,142 @@
+{
+  "identities": {
+    "primary_action": [
+      "drop",
+      "forwarding",
+      "invoke-signaling",
+      "mirror",
+      "pass",
+      "rate-limit",
+      "reject",
+      "transformation",
+      "tunnel-encapsulation"
+    ],
+    "log_action": [
+      "rule-log",
+      "session-log"
+    ],
+    "system_event": [
+      "access-violation",
+      "configuration-change"
+    ],
+    "system_alarm": [
+      "cpu-alarm",
+      "disk-alarm",
+      "hardware-alarm",
+      "interface-alarm",
+      "memory-alarm"
+    ],
+    "transport_protocol": [
+      "dccp",
+      "sctp",
+      "tcp",
+      "udp"
+    ],
+    "application_protocol": [
+      "ftp",
+      "http",
+      "http2",
+      "https",
+      "https2",
+      "imap",
+      "imaps",
+      "pop3",
+      "pop3s",
+      "smtp",
+      "ssh",
+      "telnet"
+    ],
+    "device_type": [
+      "computer",
+      "iot-device",
+      "mobile-phone",
+      "network-infrastructure-device",
+      "ot",
+      "tablet",
+      "vehicle",
+      "voip-vocn-phone"
+    ],
+    "icmp_message": [
+      "destination-unreachable",
+      "echo",
+      "echo-reply",
+      "experimental-mobility-protocols",
+      "extended-echo-reply",
+      "extended-echo-request",
+      "parameter-problem",
+      "redirect",
+      "router-advertisement",
+      "router-solicitation",
+      "time-exceeded",
+      "port-unreachable",
+      "malformed-query",
+      "multiple-interfaces-satisfy-query",
+      "no-such-interface",
+      "no-such-table-entry",
+      "reply-no-error",
+      "request-no-error"
+    ],
+    "ioc_format": [
+      "iodef",
+      "misp",
+      "openioc",
+      "stix"
+    ]
+  },
+  "typedef_enums": {
+    "day": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "friday",
+      "saturday",
+      "sunday"
+    ],
+    "frequency": [
+      "only-once",
+      "daily",
+      "weekly",
+      "monthly",
+      "yearly"
+    ]
+  },
+  "placement": {
+    "firewall": [
+      "source",
+      "destination",
+      "transport-layer-protocol",
+      "range-port-number",
+      "icmp"
+    ],
+    "condition": [
+      "firewall",
+      "ddos",
+      "anti-virus",
+      "payload",
+      "url-category",
+      "voice",
+      "context",
+      "threat-feed"
+    ],
+    "context": [
+      "time",
+      "application",
+      "device-type",
+      "users",
+      "geographic-location"
+    ]
+  },
+  "constraints": {
+    "primary_action_limit_requires": "rate-limit",
+    "period_requires_frequency_not": "only-once",
+    "day_requires_frequency": "weekly",
+    "date_requires_frequency": "monthly",
+    "month_requires_frequency": "yearly",
+    "location_group_key_order": [
+      "country",
+      "region",
+      "city"
+    ]
+  }
+}

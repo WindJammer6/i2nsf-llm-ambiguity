@@ -1,0 +1,23 @@
+Original User Intent:
+Unknown or unclassified traffic should be discarded without notification.
+
+Hidden User Scenario:
+The user is a security administrator who wants traffic that cannot be identified or classified by the system to be discarded. The goal is to avoid allowing suspicious unknown traffic through the network. The traffic should be dropped silently without sending a notification or error response. The user does not know the technical classification mechanism, protocols, ports, XML, or YANG details.
+
+Ground Truth:
+- Event: Not applicable.
+- Firewall Source: external-network
+- Firewall Destination: Not applicable.
+- Firewall Transport / Port / ICMP: Not applicable.
+- DDoS: Not applicable.
+- Payload / Anti-virus: Not applicable.
+- URL Category: Not applicable.
+- Voice: Not applicable.
+- Time Context: Not applicable.
+- Application Context: Not applicable.
+- Device-Type Context: Not applicable.
+- Users Context: Not applicable.
+- Geographic Location Context: Not applicable.
+- Threat Feed: Not applicable.
+- Primary Action: drop
+- Secondary Logging Action: Not applicable.

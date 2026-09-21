@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<i2nsf-cfi-policy xmlns="urn:ietf:params:xml:ns:yang:ietf-i2nsf-cons-facing-interface">
+  <name>ground_truth_policy_intent_020</name>
+  <rules>
+    <name>ground_truth_rule_intent_020</name>
+    <action>
+      <primary-action>
+        <action>pass</action>
+      </primary-action>
+    </action>
+    <condition>
+      <firewall>
+        <destination>proxy-server-dmz</destination>
+        <source>employees</source>
+      </firewall>
+      <url-category>
+        <url-name>video-streaming-websites</url-name>
+      </url-category>
+    </condition>
+    <event>
+      <system-event>configuration-change</system-event>
+    </event>
+  </rules>
+</i2nsf-cfi-policy>

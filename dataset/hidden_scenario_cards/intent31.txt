@@ -1,0 +1,23 @@
+Original User Intent:
+Monitor login attempts by permitting them but logging whenever this rule matches.
+
+Hidden User Scenario:
+The user is interested in audit visibility, not access restriction.
+
+Ground Truth:
+- Event: Not applicable.
+- Firewall Source: employees
+- Firewall Destination: Not applicable.
+- Firewall Transport / Port / ICMP: Not applicable.
+- DDoS: Not applicable.
+- Payload / Anti-virus: Not applicable.
+- URL Category: Not applicable.
+- Voice: Not applicable.
+- Time Context: Not applicable.
+- Application Context: Not applicable.
+- Device-Type Context: Not applicable.
+- Users Context: Not applicable.
+- Geographic Location Context: Not applicable.
+- Threat Feed: Not applicable.
+- Primary Action: pass
+- Secondary Logging Action: rule-log

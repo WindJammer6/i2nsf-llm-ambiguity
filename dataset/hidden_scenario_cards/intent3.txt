@@ -1,0 +1,23 @@
+﻿Original User Intent:
+Mitigate Flood Attacks on a Company Web Server.
+
+Hidden User Scenario:
+The user is responsible for a company website and is worried about DDoS flood attacks overwhelming the company web server. The rule should protect webservers from unusually high volumes of incoming traffic. Traffic above 1000 packets per second should be treated as suspicious flood traffic. The user wants this traffic to be dropped. The user does not know XML, YANG, or datastore object names.
+
+Ground Truth:
+- Event: Not applicable.
+- Firewall Source: Not applicable.
+- Firewall Destination: webservers
+- Firewall Transport / Port / ICMP: Not applicable.
+- DDoS: Traffic above 1000 packets per second should be treated as flood traffic.
+- Payload / Anti-virus: Not applicable.
+- URL Category: Not applicable.
+- Voice: Not applicable.
+- Time Context: Not applicable.
+- Application Context: Not applicable.
+- Device-Type Context: Not applicable.
+- Users Context: Not applicable.
+- Geographic Location Context: Not applicable.
+- Threat Feed: Not applicable.
+- Primary Action: drop
+- Secondary Logging Action: Not applicable.

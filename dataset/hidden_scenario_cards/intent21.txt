@@ -1,0 +1,23 @@
+Original User Intent:
+Translate incoming HTTP requests from IoT sensors into CoAP for the internal service.
+
+Hidden User Scenario:
+The user is managing an IoT deployment where external IoT sensors send HTTP requests, but the internal service expects CoAP messages. The rule should apply to incoming traffic from IoT sensors and transform it before it reaches the internal service. The user knows the desired protocol translation behavior, but does not know XML, YANG, exact schema fields, endpoint group names, or implementation details.
+
+Ground Truth:
+- Event: Not applicable.
+- Firewall Source: iot-devices
+- Firewall Destination: internal-service
+- Firewall Transport / Port / ICMP: Not applicable.
+- DDoS: Not applicable.
+- Payload / Anti-virus: Not applicable.
+- URL Category: Not applicable.
+- Voice: Not applicable.
+- Time Context: Not applicable.
+- Application Context: Not applicable.
+- Device-Type Context: iot-device
+- Users Context: Not applicable.
+- Geographic Location Context: Not applicable.
+- Threat Feed: Not applicable.
+- Primary Action: transformation
+- Secondary Logging Action: Not applicable.

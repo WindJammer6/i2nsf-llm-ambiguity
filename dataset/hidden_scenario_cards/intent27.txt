@@ -1,0 +1,23 @@
+Original User Intent:
+Apply a rate limit of 500 pps on ICMP traffic to mitigate ping flood attacks.
+
+Hidden User Scenario:
+The user is a network administrator who wants to reduce the impact of ping flood attacks by rate-limiting ICMP traffic. The rule should apply to ICMP traffic and limit it to 500 packets per second. The purpose is mitigation, not complete blocking. The user knows the ICMP traffic type and threshold, but does not know XML, YANG, or exact schema fields.
+
+Ground Truth:
+- Event: Not applicable.
+- Firewall Source: Not applicable.
+- Firewall Destination: Not applicable.
+- Firewall Transport / Port / ICMP: ICMP echo traffic is subject to rate limiting.
+- DDoS: Packet rate threshold: 500 packets per second.
+- Payload / Anti-virus: Not applicable.
+- URL Category: Not applicable.
+- Voice: Not applicable.
+- Time Context: Not applicable.
+- Application Context: Not applicable.
+- Device-Type Context: Not applicable.
+- Users Context: Not applicable.
+- Geographic Location Context: Not applicable.
+- Threat Feed: Not applicable.
+- Primary Action: rate-limit
+- Secondary Logging Action: Not applicable.

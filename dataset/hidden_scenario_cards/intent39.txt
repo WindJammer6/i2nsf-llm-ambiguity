@@ -1,0 +1,23 @@
+Original User Intent:
+If any employee attempts to access restricted finance servers without authorization, drop the traffic and trigger this rule.
+
+Hidden User Scenario:
+The user is a company security administrator who wants to prevent unauthorized employee access to restricted finance servers. The rule should apply to employees who are not authorized to access those finance systems. Matching traffic should be dropped. The phrase "trigger this rule" means the rule should activate when such unauthorized access is detected. The user does not know XML, YANG, endpoint group names, or exact technical fields.
+
+Ground Truth:
+- Event: system-event: access-violation
+- Firewall Source: unauthorized-employees
+- Firewall Destination: restricted-finance-servers
+- Firewall Transport / Port / ICMP: Not applicable.
+- DDoS: Not applicable.
+- Payload / Anti-virus: Not applicable.
+- URL Category: Not applicable.
+- Voice: Not applicable.
+- Time Context: Not applicable.
+- Application Context: Not applicable.
+- Device-Type Context: Not applicable.
+- Users Context: Not applicable.
+- Geographic Location Context: Not applicable.
+- Threat Feed: Not applicable.
+- Primary Action: drop
+- Secondary Logging Action: Not applicable.

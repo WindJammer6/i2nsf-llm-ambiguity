@@ -1,0 +1,23 @@
+Original User Intent:
+Drop all incoming SSH connections from the guest network and log each attempt in the rule log.
+
+Hidden User Scenario:
+The user is a company network administrator who wants to prevent guest network devices from making incoming SSH connections into protected systems. The traffic should be silently dropped rather than actively rejected. The user understands the desired SSH restriction, but does not know XML, YANG, or datastore object names.
+
+Ground Truth:
+- Event: Not applicable.
+- Firewall Source: guest-network-devices
+- Firewall Destination: Not applicable.
+- Firewall Transport / Port / ICMP: Not applicable.
+- DDoS: Not applicable.
+- Payload / Anti-virus: Not applicable.
+- URL Category: Not applicable.
+- Voice: Not applicable.
+- Time Context: Not applicable.
+- Application Context: Not applicable.
+- Device-Type Context: Not applicable.
+- Users Context: Not applicable.
+- Geographic Location Context: Not applicable.
+- Threat Feed: Not applicable.
+- Primary Action: drop
+- Secondary Logging Action: rule-log

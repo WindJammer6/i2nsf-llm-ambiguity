@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<i2nsf-cfi-policy xmlns="urn:ietf:params:xml:ns:yang:ietf-i2nsf-cons-facing-interface">
+  <name>ground_truth_policy_intent_050</name>
+  <rules>
+    <name>ground_truth_rule_intent_050</name>
+    <action>
+      <primary-action>
+        <action>pass</action>
+      </primary-action>
+    </action>
+    <condition>
+      <context>
+        <geographic-location>
+          <source>
+            <city>Singapore</city>
+            <country>SG</country>
+            <region>SG-01</region>
+          </source>
+        </geographic-location>
+        <users>
+          <group>
+            <name>employees</name>
+          </group>
+        </users>
+      </context>
+      <firewall>
+        <destination>hr-portal</destination>
+      </firewall>
+    </condition>
+    <event>
+      <system-event>access-violation</system-event>
+    </event>
+  </rules>
+</i2nsf-cfi-policy>

@@ -1,0 +1,24 @@
+Original User Intent:
+Restrict backup data transfers to 10 MB/s during work hours.
+
+Hidden User Scenario:
+The user is an IT administrator who wants backup transfers to use less bandwidth during work hours so they do not affect normal business activity. The rule should apply to backup data transfer traffic and limit it to 10 MB/s during work hours. Work hours are Monday to Friday, 09:00 to 18:00. The user does not know exact protocol names, ports, XML, YANG, or datastore object names.
+
+Ground Truth:
+- Event: Not applicable.
+- Firewall Source: it-administrators
+- Firewall Destination: Not applicable.
+- Firewall Transport / Port / ICMP: Not applicable.
+- DDoS: Not applicable.
+- Payload / Anti-virus: Not applicable.
+- URL Category: Not applicable.
+- Voice: Not applicable.
+- Time Context: Monday to Friday, 09:00 to 18:00.
+- Application Context: Backup data transfer traffic.
+- Device-Type Context: Not applicable.
+- Users Context: Not applicable.
+- Geographic Location Context: Not applicable.
+- Threat Feed: Not applicable.
+- Primary Action: rate-limit
+- Primary Action Limit: 10000000 bytes per second
+- Secondary Logging Action: Not applicable.

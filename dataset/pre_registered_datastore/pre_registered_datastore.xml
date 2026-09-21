@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoint-groups xmlns="urn:ietf:params:xml:ns:yang:ietf-i2nsf-cons-facing-interface" xmlns:i2nsfmi="urn:ietf:params:xml:ns:yang:ietf-i2nsf-monitoring-interface">
+
+  <user-group>
+    <name>employees</name>
+    <ipv6-prefix>2001:db8:10:1::/64</ipv6-prefix>
+  </user-group>
+
+  <user-group>
+    <name>students</name>
+    <ipv4-prefix>192.0.2.128/25</ipv4-prefix>
+  </user-group>
+
+  <user-group>
+    <name>finance-department</name>
+    <ipv6-prefix>2001:db8:10:3::/64</ipv6-prefix>
+  </user-group>
+
+  <user-group>
+    <name>guest-users</name>
+    <ipv4-prefix>198.51.100.128/25</ipv4-prefix>
+  </user-group>
+
+  <user-group>
+    <name>management-staff</name>
+    <range-ipv4-address>
+      <start>203.0.113.10</start>
+      <end>203.0.113.39</end>
+    </range-ipv4-address>
+  </user-group>
+
+  <user-group>
+    <name>it-administrators</name>
+    <range-ipv6-address>
+      <start>2001:db8:10:6::40</start>
+      <end>2001:db8:10:6::69</end>
+    </range-ipv6-address>
+  </user-group>
+
+  <user-group>
+    <name>unauthorized-employees</name>
+    <range-ipv4-address>
+      <start>203.0.113.100</start>
+      <end>203.0.113.149</end>
+    </range-ipv4-address>
+  </user-group>
+
+  <device-group>
+    <name>employee-devices</name>
+    <ipv6-prefix>2001:db8:20:1::/64</ipv6-prefix>
+  </device-group>
+
+  <device-group>
+    <name>student-pcs</name>
+    <ipv4-prefix>128.0.0.0/24</ipv4-prefix>
+  </device-group>
+
+  <device-group>
+    <name>son-computers</name>
+    <range-ipv4-address>
+      <start>10.0.30.10</start>
+      <end>10.0.30.20</end>
+    </range-ipv4-address>
+  </device-group>
+
+  <device-group>
+    <name>trusted-devices</name>
+    <ipv4-prefix>10.0.40.0/24</ipv4-prefix>
+  </device-group>
+
+  <device-group>
+    <name>guest-network-devices</name>
+    <ipv4-prefix>10.0.50.0/24</ipv4-prefix>
+  </device-group>
+
+  <device-group>
+    <name>iot-devices</name>
+    <ipv6-prefix>2001:db8:20:6::/64</ipv6-prefix>
+  </device-group>
+
+  <device-group>
+    <name>management-devices</name>
+    <ipv6-prefix>2001:db8:20:7::/64</ipv6-prefix>
+  </device-group>
+
+  <device-group>
+    <name>webservers</name>
+    <ipv6-prefix>2001:db8:30:1::/64</ipv6-prefix>
+    <application-protocol>i2nsfmi:http</application-protocol>
+  </device-group>
+
+  <device-group>
+    <name>database-server</name>
+    <range-ipv6-address>
+      <start>2001:db8:30:2::10</start>
+      <end>2001:db8:30:2::20</end>
+    </range-ipv6-address>
+  </device-group>
+
+  <device-group>
+    <name>internal-hr-system</name>
+    <range-ipv4-address>
+      <start>10.0.90.10</start>
+      <end>10.0.90.20</end>
+    </range-ipv4-address>
+    <application-protocol>i2nsfmi:http</application-protocol>
+  </device-group>
+
+  <device-group>
+    <name>hr-portal</name>
+    <range-ipv4-address>
+      <start>10.0.91.10</start>
+      <end>10.0.91.20</end>
+    </range-ipv4-address>
+    <application-protocol>i2nsfmi:http</application-protocol>
+  </device-group>
+
+  <device-group>
+    <name>restricted-finance-servers</name>
+    <range-ipv4-address>
+      <start>10.0.100.10</start>
+      <end>10.0.100.30</end>
+    </range-ipv4-address>
+  </device-group>
+
+  <device-group>
+    <name>firewall-device</name>
+    <range-ipv4-address>
+      <start>10.0.110.1</start>
+      <end>10.0.110.1</end>
+    </range-ipv4-address>
+  </device-group>
+
+  <device-group>
+    <name>central-server</name>
+    <range-ipv6-address>
+      <start>2001:db8:30:5::10</start>
+      <end>2001:db8:30:5::10</end>
+    </range-ipv6-address>
+  </device-group>
+
+  <device-group>
+    <name>proxy-server-dmz</name>
+    <range-ipv4-address>
+      <start>172.16.10.10</start>
+      <end>172.16.10.10</end>
+    </range-ipv4-address>
+    <application-protocol>i2nsfmi:https</application-protocol>
+  </device-group>
+
+  <device-group>
+    <name>specialized-gateway</name>
+    <range-ipv4-address>
+      <start>10.0.130.10</start>
+      <end>10.0.130.10</end>
+    </range-ipv4-address>
+  </device-group>
+
+  <device-group>
+    <name>monitoring-system</name>
+    <range-ipv6-address>
+      <start>2001:db8:30:7::10</start>
+      <end>2001:db8:30:7::10</end>
+    </range-ipv6-address>
+  </device-group>
+
+  <device-group>
+    <name>analysis-server</name>
+    <range-ipv6-address>
+      <start>2001:db8:30:8::10</start>
+      <end>2001:db8:30:8::10</end>
+    </range-ipv6-address>
+  </device-group>
+
+  <device-group>
+    <name>external-network</name>
+    <ipv4-prefix>203.0.113.0/24</ipv4-prefix>
+  </device-group>
+
+  <device-group>
+    <name>internal-service</name>
+    <range-ipv6-address>
+      <start>2001:db8:30:a::10</start>
+      <end>2001:db8:30:a::10</end>
+    </range-ipv6-address>
+  </device-group>
+
+  <location-group>
+    <country>SG</country>
+    <region>SG-01</region>
+    <city>Singapore</city>
+    <ipv6-prefix>2001:db8:60:1::/64</ipv6-prefix>
+  </location-group>
+
+  <location-group>
+    <country>US</country>
+    <region>US-CA</region>
+    <city>San Francisco</city>
+    <ipv6-prefix>2001:db8:60:2::/64</ipv6-prefix>
+  </location-group>
+
+  <location-group>
+    <country>KR</country>
+    <region>KR-11</region>
+    <city>Seoul</city>
+    <ipv6-prefix>2001:db8:60:3::/64</ipv6-prefix>
+  </location-group>
+
+  <url-group>
+    <name>sns-websites</name>
+    <url>https://facebook.example.invalid/</url>
+    <url>https://instagram.example.invalid/</url>
+    <url>https://tiktok.example.invalid/</url>
+    <url>https://x.example.invalid/</url>
+    <url>https://linkedin.example.invalid/</url>
+  </url-group>
+
+  <url-group>
+    <name>youtube-x-instagram</name>
+    <url>https://youtube.example.invalid/</url>
+    <url>https://x.example.invalid/</url>
+    <url>https://instagram.example.invalid/</url>
+  </url-group>
+
+  <url-group>
+    <name>adult-content-websites</name>
+    <url>https://adult-content-1.example.invalid/</url>
+    <url>https://adult-content-2.example.invalid/</url>
+    <url>https://restricted-adult-site.example.invalid/</url>
+  </url-group>
+
+  <url-group>
+    <name>gaming-websites</name>
+    <url>https://online-games.example.invalid/</url>
+    <url>https://game-service.example.invalid/</url>
+    <url>https://multiplayer-games.example.invalid/</url>
+  </url-group>
+
+  <url-group>
+    <name>malicious-websites</name>
+    <url>https://malware-site.example.invalid/</url>
+    <url>https://phishing-site.example.invalid/</url>
+    <url>https://unsafe-download.example.invalid/</url>
+  </url-group>
+
+  <url-group>
+    <name>video-streaming-websites</name>
+    <url>https://video-streaming.example.invalid/</url>
+    <url>https://movie-streaming.example.invalid/</url>
+    <url>https://live-video.example.invalid/</url>
+  </url-group>
+
+  <voice-group>
+    <name>malicious-id</name>
+    <sip-id>sip:malicious-caller-1@example.invalid</sip-id>
+    <sip-id>sip:malicious-caller-2@example.invalid</sip-id>
+    <sip-id>sip:suspicious-voice-source@[2001:db8:40::15]</sip-id>
+  </voice-group>
+
+  <voice-group>
+    <name>company-voice-system</name>
+    <sip-id>sip:voice-gateway@example.invalid</sip-id>
+    <sip-id>sip:company-pbx@example.invalid</sip-id>
+  </voice-group>
+
+</endpoint-groups>
+
+
+<threat-prevention
+ xmlns="urn:ietf:params:xml:ns:yang:ietf-i2nsf-cons-facing-interface">
+
+  <threat-feed-list>
+    <name>malicious-ip-feed</name>
+    <ioc>203.0.113.66</ioc>
+    <ioc>2001:db8:50::77</ioc>
+    <ioc>2001:db8:50::88</ioc>
+    <format>stix</format>
+  </threat-feed-list>
+
+  <threat-feed-list>
+    <name>zeus-ioc</name>
+    <ioc>zeus-command.example.invalid</ioc>
+    <ioc>zeus-dropper.example.invalid</ioc>
+    <ioc>2001:db8:52::120</ioc>
+    <format>stix</format>
+  </threat-feed-list>
+
+  <threat-feed-list>
+    <name>flood-attack-sources</name>
+    <ioc>198.51.100.250</ioc>
+    <ioc>2001:db8:53::251</ioc>
+    <ioc>flood-source.example.invalid</ioc>
+    <format>stix</format>
+  </threat-feed-list>
+
+  <payload-content>
+    <name>suspicious-payload-profile</name>
+    <description>
+      Synthetic payload profile for suspicious executable and script-like payload patterns.
+    </description>
+    <contents>
+      <content>TVo=</content>
+      <depth>16</depth>
+      <offset>0</offset>
+    </contents>
+    <contents>
+      <content>cG93ZXJzaGVsbA==</content>
+      <depth>512</depth>
+      <distance>0</distance>
+    </contents>
+  </payload-content>
+
+</threat-prevention>

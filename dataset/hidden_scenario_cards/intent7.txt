@@ -1,0 +1,23 @@
+Original User Intent:
+Restrict access to adult content from all devices.
+
+Hidden User Scenario:
+The user is managing a family or small organization network and wants to prevent all connected devices from accessing adult content websites. The restriction should apply to every device on the network, including phones, laptops, tablets, and shared computers. The user does not know the exact URL category name, website list, protocols, or ports. They simply want adult content to be blocked across the network.
+
+Ground Truth:
+- Event: Not applicable.
+- Firewall Source: All devices connected to the network.
+- Firewall Destination: Not applicable.
+- Firewall Transport / Port / ICMP: Not applicable.
+- DDoS: Not applicable.
+- Payload / Anti-virus: Not applicable.
+- URL Category: adult-content-websites
+- Voice: Not applicable.
+- Time Context: Not applicable.
+- Application Context: Not applicable.
+- Device-Type Context: Not applicable.
+- Users Context: Not applicable.
+- Geographic Location Context: Not applicable.
+- Threat Feed: Not applicable.
+- Primary Action: drop
+- Secondary Logging Action: Not applicable.

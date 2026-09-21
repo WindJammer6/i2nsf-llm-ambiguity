@@ -1,0 +1,23 @@
+Original User Intent:
+Allow all employee web browsing but write a rule-log entry whenever this rule is triggered.
+
+Hidden User Scenario:
+The user is a company administrator who wants employees to browse the web normally, while recording when the web browsing rule is triggered. The rule should apply to regular employees on the corporate network. They do not know exact web protocols, ports, XML, YANG, or endpoint group names.
+
+Ground Truth:
+- Event: Not applicable.
+- Firewall Source: employee-devices
+- Firewall Destination: Not applicable.
+- Firewall Transport / Port / ICMP: Not applicable.
+- DDoS: Not applicable.
+- Payload / Anti-virus: Not applicable.
+- URL Category: Not applicable.
+- Voice: Not applicable.
+- Time Context: Not applicable.
+- Application Context: Not applicable.
+- Device-Type Context: computer.
+- Users Context: Not applicable.
+- Geographic Location Context: Not applicable.
+- Threat Feed: Not applicable.
+- Primary Action: pass
+- Secondary Logging Action: rule-log

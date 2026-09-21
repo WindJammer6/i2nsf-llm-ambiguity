@@ -1,0 +1,23 @@
+Original User Intent:
+Traffic from trusted devices should be allowed without any filtering.
+
+Hidden User Scenario:
+The user is a company network administrator who wants devices already marked as trusted to communicate freely through the network. The rule should apply only to trusted company-managed devices, not guest devices or unknown devices. The user wants matching traffic to be allowed without extra filtering or inspection. There is no special time restriction, and the user does not know XML, YANG, or datastore object names.
+
+Ground Truth:
+- Event: Not applicable.
+- Firewall Source: trusted-devices
+- Firewall Destination: Not applicable.
+- Firewall Transport / Port / ICMP: Not applicable.
+- DDoS: Not applicable.
+- Payload / Anti-virus: Not applicable.
+- URL Category: Not applicable.
+- Voice: Not applicable.
+- Time Context: Not applicable.
+- Application Context: Not applicable.
+- Device-Type Context: Not applicable.
+- Users Context: Not applicable.
+- Geographic Location Context: Not applicable.
+- Threat Feed: Not applicable.
+- Primary Action: pass
+- Secondary Logging Action: Not applicable.
