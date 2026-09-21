@@ -15,7 +15,7 @@ Large language models (LLMs) can generate structured security policies from natu
 
 The framework is evaluated on a synthetic benchmark of 50 security intents under initially empty and pre-registered Security Controller datastore settings. The evaluation measures YANG syntax validity, Disagreement Score (DS), and Scenario Alignment Score (SAS) using GPT-4o-mini and Gemini 3.5 Flash Lite.
 
-This work succeeds and extends the following studies:
+This project can seen as to succeed these papers:
 
 - Rodriguez et al., [Security Policy Generation for Cloud-Based Security Services using Large Language Model](http://iotlab.skku.edu/publications/domestic-conference/KICS-2025-Winter-LLM-Based-Security-Policy-Generation.pdf), with [source code](https://github.com/jaehoonpauljeong/Data-Modeling-Group-2-Project).
 - Goh et al., [A Hallucination Mitigation Scheme in Security Policy Generation with Large Language Models](http://iotlab.skku.edu/publications/domestic-conference/KICS-2026-Winter-LLM-AntiHallucination.pdf), with [source code](https://github.com/WindJammer6/37.-A-Hallucination-Mitigation-Scheme-in-Security-Policy-Generation-with-Large-Language-Models).
