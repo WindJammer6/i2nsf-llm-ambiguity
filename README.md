@@ -7,7 +7,7 @@ Overleafs (only accessible by the authors):
 - https://www.overleaf.com/project/6a9a6951e4c4a85262fd581e (6-page version)
 - https://www.overleaf.com/project/6aa98af03883a326132d282d (8-page version)
 
-Experimental raw runs and results: [Link to be added]
+Experimental raw runs and results: [GitHub Releases](https://github.com/WindJammer6/i2nsf-llm-ambiguity/releases)
 
 ## Abstract
 
@@ -152,8 +152,6 @@ Generated experiment artifacts are written under `experiments/`. The raw runs ar
 ## Results
 
 Across the evaluated LLMs and datastore settings, targeted clarification reduces policy disagreement and improves alignment with the expected scenario while preserving YANG syntax validity. SPE achieves 100% syntax validity in the syntactic-correctness experiment through schema-constrained generation and deterministic XML conversion.
-
-The complete raw runs and machine-readable result artifacts will be made available through the experimental-results link at the beginning of this README.
 
 ## Sources
 
