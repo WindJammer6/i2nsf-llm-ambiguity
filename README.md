@@ -1,6 +1,6 @@
 # Clarification-Guided Intent Ambiguity Resolution for LLM-Based Security Policy Generation
 
-Paper:
+Work:
 
 Overleafs (only accessible by the authors):
 
